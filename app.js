@@ -6,10 +6,10 @@ let superheroData = [
   {name: "Wolverine", phone_number: "5718932123", comic: "Marvel", photo_url: "http://bit.ly/2meYzjN"},
   {name: "Iron Man", phone_number: "4149037456", comic: "Marvel", photo_url: "http://bit.ly/2n76qgz"},
   {name: "Hulk", phone_number: "7531244234", comic: "Marvel", photo_url: "http://bit.ly/2lUjqpH"},
-  {name: "Thor", phone_number: "7103968904", comic: "Marvel", photo_url: "http://bit.ly/2lUjqpH"},
+  {name: "Thor", phone_number: "7103968904", comic: "Marvel", photo_url: "http://bit.ly/2mfumAM"},
   {name: "Nightwing", phone_number: "482990121", comic: "DC", photo_url: "http://bit.ly/2mNW0qd"},
-  {name: "Green Arrow", phone_number: "8382912835", comic: "DC", photo_url: "http://bit.ly/2meUYC0"},
-  {name: "Aquaman", phone_number: "8492349009", comic: "DC", photo_url: "http://bit.ly/2cLIN9n"}
+  {name: "Green Arrow", phone_number: "8382912835", comic: "DC", photo_url: "http://bit.ly/2my5iWT"},
+  {name: "Aquaman", phone_number: "8492349009", comic: "DC", photo_url: "http://bit.ly/2lV6q35"}
 ]
 
 angular

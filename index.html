@@ -8,17 +8,8 @@
   <script src="app.js"></script>
 </head>
 <body ng-controller = "superheroCtrl as vm">
-  <input type="text" ng-model="search" placeholder="Search">
-  <div class = {{superhero.comic}} ng-repeat = "superhero in vm.superhero | filter: search">
-    <p>
-      {{$index + 1}}. Superhero: {{superhero.name}}<br>
-      Phone Number: {{superhero.phone_number}}<br>
-      Comic Affilication: {{superhero.comic}}
-    </p>
-    <img src="{{superhero.photo_url}}" ng-show="vm.viewImage[$index]">
-    <button ng-click = "vm.viewImage[$index] = !vm.viewImage[$index]">View Superhero</button>
-  </div>
-  <br><br>
+  Search: <input type="text" ng-model="search" placeholder="Search">
+  <h2>Create a new Superhero</h2>
   <div>
     <input type="text" placeholder="Name" ng-model="vm.newName">
     <input type="text" placeholder="Phone Number" ng-model="vm.newPhoneNumber">
@@ -26,6 +17,16 @@
     <input type="text" placeholder="Photo URL" ng-model="vm.newPhotoURL">
     <button ng-click = "vm.addSuperhero()">Create Superhero!</button>
   </div>
-
+  <h2>Current Superheros</h2>
+  <div class = {{superhero.comic}} ng-repeat = "superhero in vm.superhero | filter: search">
+    <h4>
+      {{$index + 1}}. Superhero: {{superhero.name}}<br>
+      Phone Number: {{superhero.phone_number}}<br>
+      Comic Affilication: {{superhero.comic}}
+    </h4>
+    <img src="{{superhero.photo_url}}" ng-show="vm.viewImage[$index]">
+    <br>
+    <button ng-click = "vm.viewImage[$index] = !vm.viewImage[$index]">View {{superhero.name}}</button>
+  </div>
 </body>
 </html>
