@@ -15,7 +15,10 @@
       Phone Number: {{superhero.phone_number}}<br>
       Comic Affilication: {{superhero.comic}}
     </p>
+    <img src="{{superhero.photo_url}}" ng-show="vm.viewImage[$index]">
+    <button ng-click = "vm.viewImage[$index] = !vm.viewImage[$index]">View Superhero</button>
   </div>
+  <br><br>
   <div>
     <input type="text" placeholder="Name" ng-model="vm.newName">
     <input type="text" placeholder="Phone Number" ng-model="vm.newPhoneNumber">

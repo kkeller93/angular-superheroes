@@ -1,7 +1,16 @@
+body {
+  text-align: center;
+}
+
 .DC {
   color: red;
 }
 
 .Marvel {
   color: blue;
+}
+
+img {
+  width: 300px;
+  height: 400px;
 }
